@@ -107,7 +107,8 @@ This plot visualizes the prediction errors for all 8 experiments. The errors for
 As the performance metrics of models go down we can observe a wider spread of errors.
 
 ### 6.4. Final Conclusion
-This project successfully developed a machine learning pipeline to predict medical insurance costs, achieving a final **R-squared of 0.8844** with an **RMSE of 4236.27$**  on the Kaggle dataset. The experimental approach produced an accurate model but also yielded valuable insights into the robustness of different algorithms and the true impact of preprocessing steps such as using logtransform for squewed .
+This project successfully developed a machine learning pipeline to predict medical insurance costs, achieving a final **R-squared of 0.8844** with an **RMSE of 4236.27$**  on the Kaggle dataset. 
+The experimental approach produced an accurate model but also yielded valuable insights into the robustness of different algorithms and the true impact of preprocessing steps such as using a log transformation for skewed data .
 
 ## 7. How to Run This Project
 1.  **Clone the repository:**
