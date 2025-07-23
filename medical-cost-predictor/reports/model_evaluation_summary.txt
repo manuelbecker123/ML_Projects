@@ -1,7 +1,11 @@
---- Model Evaluation Summary ---
+--- Overall Model Evaluation Summary ---
 
-       Model  R-squared         MAE        RMSE
-     XGBoost   0.879732 1940.294810 4321.053890
-RandomForest   0.878252 2080.323677 4347.550421
-    LightGBM   0.874690 2038.589735 4410.685773
-  ElasticNet   0.592377 4428.690502 7955.060654
+                Experiment  R-squared         MAE        RMSE
+     XGBoost (Without Log)   0.884405 2452.993779 4236.269940
+        XGBoost (With Log)   0.879732 1940.294810 4321.053890
+   RandomForest (With Log)   0.878252 2080.323677 4347.550421
+       LightGBM (With Log)   0.874690 2038.589735 4410.685773
+    LightGBM (Without Log)   0.873847 2459.648059 4425.506603
+RandomForest (Without Log)   0.866732 2524.157717 4548.588067
+  ElasticNet (Without Log)   0.778638 4309.368920 5862.270865
+     ElasticNet (With Log)   0.592377 4428.690502 7955.060654
