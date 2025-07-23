@@ -96,17 +96,18 @@ The final model chosen is **XGBoost trained on the original, untransformed data*
 ![Feature Importance Comparison](reports/figures/feature_importance_comparison.png)
 
 **Key Finding:** This plot compares the feature importances for the XGBoost model with and without the log transform, explaining *why* the models behave differently.
-- **Without Log:** The model is heavily penalized by errors on high-cost outliers. It therefore focuses almost all its attention on `smoker_yes` (importance ~0.85), the single best predictor for these extreme cases.
-- **With Log:** After the log transform dampens the outliers, the model can focus on improving accuracy for the general population. It still recognizes `smoker_yes` as most important, but it distributes importance more evenly, giving more weight to `age` and `bmi` to better differentiate between the majority of patients.
+- **Without Log:** The model is heavily penalized by errors on high-cost outliers. It therefore focuses almost all its attention on `smoker_yes` (importance ~0.85), the single best predictor for these extreme cases. And making `BMI` the second most important feature (importance ~0.1).
+- **With Log:** After the log transform dampens the outliers, the model can focus on improving accuracy for the general population. It still recognizes `smoker_yes` as most important (importance ~0.65), but it distributes importance more evenly, giving more weight to all other features to better differentiate between the majority of patients.
 
 This visualization clearly shows how the model adapts its strategy based on the structure of the target variable. The most critical business insight remains consistent: **smoking status is the single most dominant factor in predicting medical costs.**
 
 ### 6.3. Residuals Analysis
 ![Residuals Jitter Plot](reports/figures/residuals_jitter_plot_all.png)
-This plot visualizes the prediction errors for all 8 experiments. The errors for the top-performing models are clustered around the center line at 0, indicating low bias. While the models trained without the log transform show a wider spread of errors (due to the original scale of dollars), their central tendency is strong, confirming their high performance.
+This plot visualizes the prediction errors for all 8 experiments. The errors for the top-performing models are clustered around the center line at 0, indicating low bias. 
+As the performance metrics of models go down we can observe a wider spread of errors.
 
 ### 6.4. Final Conclusion
-This project successfully developed a high-performance machine learning pipeline to predict medical insurance costs, achieving a final **R-squared of 0.8844**. The rigorous experimental approach not only produced an accurate model but also yielded valuable insights into the robustness of different algorithms and the true impact of preprocessing steps. The final XGBoost model provides accurate predictions and actionable insights, demonstrating a complete, end-to-end data science workflow.
+This project successfully developed a machine learning pipeline to predict medical insurance costs, achieving a final **R-squared of 0.8844** with an **RMSE of 4236.27$**  on the Kaggle dataset. The experimental approach produced an accurate model but also yielded valuable insights into the robustness of different algorithms and the true impact of preprocessing steps such as using logtransform for squewed .
 
 ## 7. How to Run This Project
 1.  **Clone the repository:**
