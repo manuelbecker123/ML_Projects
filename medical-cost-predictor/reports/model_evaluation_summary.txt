@@ -1,0 +1,7 @@
+--- Model Evaluation Summary ---
+
+       Model  R-squared         MAE        RMSE
+     XGBoost   0.879732 1940.294810 4321.053890
+RandomForest   0.878252 2080.323677 4347.550421
+    LightGBM   0.874690 2038.589735 4410.685773
+  ElasticNet   0.592377 4428.690502 7955.060654
