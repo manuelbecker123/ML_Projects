@@ -89,7 +89,7 @@ While Prophet provided a solid baseline by identifying key seasonalities, the LS
 ## 7. How to Run This Project
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/ML_projects.git
+    git clone https://github.com/manuelbecker123/ML_Projects.git
     cd ML_projects/energy-consumption-forecast
     ```
 2.  **Set up the environment:**
