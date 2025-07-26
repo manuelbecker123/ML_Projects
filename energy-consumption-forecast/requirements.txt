@@ -1,0 +1,11 @@
+pandas
+scikit-learn
+statsmodels
+prophet
+tensorflow
+matplotlib
+seaborn
+kaggle
+openpyxl
+ipykernel
+plotly

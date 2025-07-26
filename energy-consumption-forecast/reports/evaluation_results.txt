@@ -1,0 +1,12 @@
+--- PROPHET Model Results (2025-07-25 22:04:44) ---
+Mean Absolute Error (MAE): 1525.90
+Mean Squared Error (MSE): 4059773.64
+Root Mean Squared Error (RMSE): 2014.89
+--------------------------------------------------
+
+--- LSTM Model Results (2025-07-25 22:08:17) ---
+Mean Absolute Error (MAE): 137.01
+Mean Squared Error (MSE): 34211.40
+Root Mean Squared Error (RMSE): 184.96
+--------------------------------------------------
+
